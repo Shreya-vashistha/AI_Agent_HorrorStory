@@ -60,7 +60,7 @@ export default function StoryTerminal() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5000/api/story/generate", {
+      const res = await fetch("https://ai-agent-horrorstory-1.onrender.com/api/story/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt }),
